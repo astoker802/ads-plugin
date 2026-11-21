@@ -1,0 +1,49 @@
+MIT License
+
+Copyright (c) 2026 Aspectie
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Scope of this license
+
+The MIT license above covers the CODE of the Aspectie Design System: the CSS,
+the JavaScript, the TypeScript, the framework ports under `packages/`, the
+build and verification tooling under `tools/` and `scripts/`, the written
+documentation under `ads-rules/` and `specs/`, and the documentation site
+itself.
+
+It does NOT cover two other kinds of file, which carry their own terms:
+
+1. **Visual assets of the Aspectie brand and of this design system** - the
+   brand symbol and wordmark, the illustrations, the sharing images and any
+   icon drawn for the ADS itself. Those are licensed under Creative Commons
+   Attribution 4.0 International. See `LICENSE-ASSETS`.
+
+2. **Third-party fonts and icon families redistributed inside this
+   repository** - three type families under `fonts/` and five icon families
+   under `icons/`. Each keeps the license of whoever made it, and the full
+   text of every one of those licenses is in `THIRD-PARTY-NOTICES.md`. The
+   font licenses also travel next to the font files, as the SIL Open Font
+   License requires.
+
+If you are only consuming the design system in a product, the short version
+is: the code is MIT, credit the design, and keep the third-party notices for
+the fonts and icons you ship.

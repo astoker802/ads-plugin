@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ads",
+  "version": "1.0.0",
+  "description": "Aspectie Design System dentro do agente: tokens, componentes prontos com CSS e JS oficiais, moldes de tela, vocabulario de interface e os verificadores que acusam desvio antes do PR.",
+  "author": {
+    "name": "Aspectie",
+    "url": "https://aspectie.com"
+  },
+  "homepage": "https://aspectie.com",
+  "repository": "https://github.com/astoker802/ads-plugin",
+  "license": "MIT",
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "ui",
+    "css",
+    "acessibilidade",
+    "aspectie"
+  ]
+}

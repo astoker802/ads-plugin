@@ -1,0 +1,51 @@
+{
+  "name": "ads",
+  "version": "1.0.0",
+  "displayName": "Aspectie Design System",
+  "description": "Aspectie Design System dentro do agente: tokens, componentes prontos com CSS e JS oficiais, moldes de tela, vocabulario de interface e um verificador que acusa desvio a cada arquivo escrito.",
+  "author": {
+    "name": "Aspectie",
+    "url": "https://aspectie.com"
+  },
+  "homepage": "https://aspectie.com",
+  "repository": "https://github.com/astoker802/ads-plugin",
+  "license": "MIT",
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "ui",
+    "css",
+    "acessibilidade",
+    "aspectie"
+  ],
+  "engines": {
+    "claude-code": ">=2.1.76"
+  },
+  "network": {
+    "hosts": [
+      "aspectie-ads-mcp.netlify.app"
+    ]
+  },
+  "userConfig": {
+    "static_dir": {
+      "type": "string",
+      "title": "Pasta de arquivos estaticos",
+      "description": "Onde /ads:init grava tokens.css, as fontes e o sprite de icones. Exemplos: public/ads, src/assets/ads, static/ads. Em branco, a skill pergunta."
+    },
+    "accent_hex": {
+      "type": "string",
+      "title": "Cor de acao do produto",
+      "description": "Hex da cor de acao do seu produto, com #. Em branco, vale o tema padrao do ADS."
+    },
+    "icon_family": {
+      "type": "string",
+      "title": "Familia de icones",
+      "description": "phosphor, hugeicons, lucide, material ou tabler. Em branco, vale phosphor."
+    },
+    "language": {
+      "type": "string",
+      "title": "Idioma da interface",
+      "description": "pt, en ou es. Decide o idioma dos rotulos que o agente escreve. Em branco, vale pt."
+    }
+  }
+}

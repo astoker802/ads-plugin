@@ -1,0 +1,25 @@
+{
+  "name": "aspectie",
+  "description": "O marketplace do Aspectie Design System.",
+  "metadata": {
+    "description": "O marketplace do Aspectie Design System."
+  },
+  "owner": {
+    "name": "Aspectie",
+    "url": "https://aspectie.com"
+  },
+  "plugins": [
+    {
+      "name": "ads",
+      "source": "./",
+      "category": "design",
+      "tags": [
+        "design-system",
+        "design-tokens",
+        "ui",
+        "css",
+        "acessibilidade"
+      ]
+    }
+  ]
+}
