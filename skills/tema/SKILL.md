@@ -14,7 +14,8 @@ contraste medido. Voce nao pinta token por token.
    dentro do componente e nunca por `prefers-color-scheme` em CSS de componente.
 2. `get_theme({ ... })` com a semente do produto. O servidor **roda o motor** e devolve
    os tokens ja aprovados no contraste AA. Preferencias configuradas na instalacao do
-   plugin: cor `${user_config.accent_hex}`, icones `${user_config.icon_family}`.
+   plugin: cor `${user_config.accent_hex}` (padrao `#84ff00`, a lima do ADS), icones
+   `${user_config.icon_family}` (padrao `phosphor`).
    - Pediram "um tema qualquer"? `get_theme({ random: true, count: 3 })` sorteia entre os
      curados e mostra opcoes para escolher.
 3. Grave o resultado como camada **depois** de `tokens.css`. Nunca edite `tokens.css`:

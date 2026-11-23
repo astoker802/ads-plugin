@@ -12,7 +12,7 @@ visual e ainda esta errado.
 
 1. `get_voice()` **antes** de escrever: publico, tom, vocabulario e forma.
 2. Escreva. Idioma da interface configurado na instalacao: `${user_config.language}`
-   (em branco, portugues).
+   (padrao `pt`, portugues).
 3. `check_copy({ text })` **depois**, em cada rotulo novo. Ele devolve o termo fora do
    vocabulario e o que usar no lugar.
 

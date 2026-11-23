@@ -1,6 +1,6 @@
 {
   "name": "ads",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Aspectie Design System dentro do agente: tokens, componentes prontos, moldes de tela e o vocabulario de interface, por MCP.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {

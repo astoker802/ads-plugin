@@ -11,10 +11,13 @@ aqui se escreve de memoria.
 
 ## Antes de gravar
 
-1. Descubra a pasta de arquivos estaticos. Preferencia configurada na instalacao do
-   plugin: `${user_config.static_dir}`. Se vier em branco ou sem substituir, procure a
-   convencao do projeto (`public/`, `static/`, `src/assets/`) e **confirme com o usuario**
-   antes de gravar. O destino padrao e `<estaticos>/ads/`.
+1. Decida a pasta de arquivos estaticos - sem perguntar. Preferencia configurada na
+   instalacao do plugin: `${user_config.static_dir}`, que e o caminho **completo** do
+   destino. Em branco, sem substituir (so o Claude Code substitui; os outros hosts
+   entregam este texto cru) ou no padrao, vale `public/ads`; se o projeto nao tiver
+   `public/`, use a primeira que existir entre `static/`, `src/assets/` e `assets/`,
+   com `/ads` no fim. Nenhuma existe? Crie `public/ads`. Diga no relato qual pasta
+   escolheu e por que - decidir e dizer, nao perguntar.
 2. Veja se o ADS ja esta la. Se `tokens.css` existir, compare com o do servidor e diga o
    que mudou. Nunca sobrescreva arquivo que o usuario editou sem mostrar a diferenca.
 3. Descubra a stack (vanilla, React, Angular, React Native). Ela decide o passo 5.
@@ -34,10 +37,12 @@ aqui se escreve de memoria.
    O `<html>` leva `lang` e `data-theme="light"`; o `<head>` leva `<meta viewport>`.
    Em React, Angular ou React Native, siga o que `get_rules({ topic: "07" })` e
    `get_rules({ topic: "17" })` dizem para a stack.
-6. Tema do produto, se houver cor configurada (`${user_config.accent_hex}`) ou familia de
-   icones (`${user_config.icon_family}`): `get_theme({ ... })` expande a semente e
-   devolve os tokens ja medidos no contraste. Grave como camada **depois** de
-   `tokens.css`, nunca editando `tokens.css`.
+6. Tema do produto. Cor configurada: `${user_config.accent_hex}` (padrao `#84ff00`, a
+   lima do ADS); familia de icones: `${user_config.icon_family}` (padrao `phosphor`).
+   Se os dois estiverem no padrao, **pare aqui**: `tokens.css` ja e esse tema, e uma
+   camada repetindo-o so cria um segundo lugar para divergir. Se algum diferir,
+   `get_theme({ ... })` expande a semente e devolve os tokens ja medidos no contraste;
+   grave como camada **depois** de `tokens.css`, nunca editando `tokens.css`.
 7. Copie `references/AGENTS.ads.md` desta skill para a raiz do projeto como `AGENTS.md`.
    Se ja existir um `AGENTS.md`, acrescente a secao do ADS ao final em vez de substituir.
    Esse arquivo e o que os outros agentes do time leem.

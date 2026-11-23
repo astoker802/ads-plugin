@@ -1,6 +1,6 @@
 {
   "name": "ads",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "Aspectie Design System",
   "description": "Aspectie Design System dentro do agente: tokens, componentes prontos com CSS e JS oficiais, moldes de tela, vocabulario de interface e um verificador que acusa desvio a cada arquivo escrito.",
   "author": {
@@ -30,22 +30,26 @@
     "static_dir": {
       "type": "string",
       "title": "Pasta de arquivos estaticos",
-      "description": "Onde /ads:init grava tokens.css, as fontes e o sprite de icones. Exemplos: public/ads, src/assets/ads, static/ads. Em branco, a skill pergunta."
+      "description": "Caminho completo da pasta onde /ads:init grava tokens.css, as fontes e o sprite de icones - o destino, nao a raiz dos estaticos. Padrao public/ads; sem public/ no projeto, a skill usa a primeira que existir entre static/, src/assets/ e assets/.",
+      "default": "public/ads"
     },
     "accent_hex": {
       "type": "string",
       "title": "Cor de acao do produto",
-      "description": "Hex da cor de acao do seu produto, com #. Em branco, vale o tema padrao do ADS."
+      "description": "Hex da cor de acao do seu produto, com #. Padrao #84ff00, a lima do ADS - nesse valor o tokens.css ja e o tema e nenhuma camada extra e gravada.",
+      "default": "#84ff00"
     },
     "icon_family": {
       "type": "string",
       "title": "Familia de icones",
-      "description": "phosphor, hugeicons, lucide, material ou tabler. Em branco, vale phosphor."
+      "description": "phosphor, hugeicons, lucide, material ou tabler. Padrao phosphor, a familia que o sprite de boot do ADS desenha.",
+      "default": "phosphor"
     },
     "language": {
       "type": "string",
       "title": "Idioma da interface",
-      "description": "pt, en ou es. Decide o idioma dos rotulos que o agente escreve. Em branco, vale pt."
+      "description": "pt, en ou es. Decide o idioma dos rotulos que o agente escreve. Padrao pt.",
+      "default": "pt"
     }
   }
 }

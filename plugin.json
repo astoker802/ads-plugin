@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ads",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Aspectie Design System dentro do agente: tokens, componentes prontos com CSS e JS oficiais, moldes de tela, vocabulario de interface e os verificadores que acusam desvio antes do PR.",
   "author": {
     "name": "Aspectie",
